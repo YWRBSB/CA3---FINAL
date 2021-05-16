@@ -1,0 +1,142 @@
+/* Index style
+
+/*background image and font for the body*/
+body {
+    background-image: url(/img/css/background.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+  }
+  
+  /*Style and position of the page container*/
+  .container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: auto auto;
+    grid-template-rows: 450px auto auto;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 100px 0;
+    margin-bottom: 100px;
+  }
+  
+ 
+  /*
+    STAFF PASSWORD VALIDATOR
+  */
+  
+  /*Style and position of the password section*/
+  .login {
+    background: #cc7968;
+    opacity: 0.8;
+    justify-self: center;
+    max-width: 400px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
+  }
+  
+  /*Style and position of the username and password fields*/
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cc7968;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /*Style and position of the submit button*/
+  input[type=submit] {
+    background-color: #036b2e;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  /*Style and position of the messages and validators*/
+  #message {
+    display: none;
+    background-color: red;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 40px;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+  
+   /*
+    RANDOM USER GENERATOR
+  */
+  
+  /*Style and position of the the random user generator*/
+  .users {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  
+    background: #D5C9C7;
+    opacity: 0.8;
+    max-width: 500px;
+    height: 850px;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);  
+  }
+  
+  /*Style and position of the random user generator button*/
+  #getRandom {
+    background-color: #9B9E87;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin: 10px 75px;
+    border-radius: 5px;
+  }
+  
+  /*Style and position of the random user generator result*/
+  #output {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  

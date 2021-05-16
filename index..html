@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA3 - YURI MENDONCA RIBEIRO 2020347</title>
+    <!-- CSS file --> 
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
-    
+    <!--Container-->
+    <div class="container">
+
+        <!--STAFF PASSWORD VALIDATOR - Reference: W3SCHOOLS -->
+            <section class="login">
+            <form action="/index2.html">
+                <h5 style="text-align: center;">Staff Password Validator</h5>
+                <br>
+                <label for="user">Username</label>
+                <input type="text" name="user" id="user">
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required>
+
+                <input type="submit" value="submit">
+            </form>
+
+            <div id="message">
+                <h2>Password must contain the following:</h2>
+                <p id="lowerCa" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="upperCa" class="invalid">A <b>uppercase</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+        </section>
+
+         <!--RANDOM USER GENERATOR-->
+         <section class="users">
+            <button id="getRandom">Click here to choose a customer</button>
+            <div id="output"></div>
+        </section>
+
 </body>
 </html>
