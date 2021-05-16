@@ -2,7 +2,7 @@
 
 /*background image and font for the body*/
 body {
-    background-image: url(img/css/background.jpg);
+    background-image: url(../img/css/background.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
