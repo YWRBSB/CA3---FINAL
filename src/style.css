@@ -2,12 +2,12 @@
 
 /*background image and font for the body*/
 body {
-    background-image: url(./img/background.jpg);
+    background-image: url(/img/background.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'
+    
   }
   
   /*Style and position of the page container*/
@@ -31,7 +31,7 @@ body {
   /*Style and position of the password section*/
   .login {
     background: #cc7968;
-    opacity: 0.8;
+    opacity: 0.9;
     justify-self: center;
     max-width: 400px;
     height: 300px;
@@ -106,7 +106,7 @@ body {
     grid-row-end: 3;
   
     background: #cc7968;
-    opacity: 0.8;
+    opacity: 0.9;
     max-width: 500px;
     height: 850px;
     padding: 30px;
@@ -139,4 +139,98 @@ body {
     padding: 20px;
   }
   
+  /*
+    MENU
+  */
   
+  /*styling and positioning the menu*/
+  .menu {
+    background: #cc7968;
+    opacity: 0.9;
+    width: 100%;
+    max-width: 700px;
+    height: fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
+  }
+  
+  /*styling and positioning the menu titles*/
+  .title {
+    color: #a50e0e;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Style and position of the articles tags */
+  
+  article {
+    display: flex;
+    text-align: right;
+    width: 100%;
+    width: 500px;
+    padding: 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid gray;
+  }
+  
+
+  .item {
+    width: 100%;
+  }
+  
+
+  .qde {
+    width: 100%;
+    max-width: 40px;
+    align-self: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .qde > input {
+    margin: 0;
+  }
+  
+  
+  h4 {
+    font-weight: bolder;
+  }
+
+  
+  /*  BILL  */
+  
+  
+  .bill {
+    background: #cc7968;
+    opacity: 0.9;
+    justify-self: center;
+    max-width: 400px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
+  }
+  
+
+
+  
+  /*Style and position of the table*/
+  th, tr, td {
+    text-align: center;
+    padding-left: 50px;
+  }
+  
+ /* style and position of the footer */
+  
+  footer {
+    position: fixed;
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }

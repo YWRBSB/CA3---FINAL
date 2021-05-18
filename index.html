@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <header></header>
     <!--Container-->
     <div class="container">
 
@@ -42,6 +43,274 @@
             <button id="getRandom">Click here to choose a customer</button>
             <div id="output"></div>
         </section>
+
+        <!--MENU-->
+        <!-- Starters  -->
+        <section class="menu">
+            <div id="starters">
+                <h2 class="title">Starters</h2>
+
+                <article>
+                    <div class="item">
+                        <h4>Garlic Bread</h4>
+                        <p>Our classic pizza base with garlic and mozzarella €6</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde1" type="text" id="qde1" value="0" size="3" data-price="6.00" data-type="veg"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>Chips</h4>
+                        <p>Our hand cut fries tossed in our own house seasoning €3</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde2" type="text" id="qde2" value="0" size="3" data-price="3.00" data-type="veg"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>Tomato Bruschetta</h4>
+                        <p> Our classic pizza base with garlic, cherry tomatoes, basil and balsamic drizzle €6 </p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde3" type="text" id="qde3" value="0" size="3" data-price="6.00" data-type="veg"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <h4>Extra Hot Wings Of Fire</h4>
+                        <p> For the people that love a challenge (These wings are hot!!!) €8 </p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde4" type="text" id="qde4" value="0" size="3" data-price="5.00" data-type="noVeg"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+            </div>
+          
+            <!-- Pizza -->
+
+            <div id="pizza">
+                <h2 class="title">Pizzas</h2>
+
+                <article>
+                    <div class="item">
+                        <h4>Mozzarella (V) </h4>
+                        <p>Tomato, Fior di Latte Mozzarella & Basi €10</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde5" type="text" id="qde5" value="0" size="3" data-price="10.00"
+                            data-type="veg" onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>Double Pepperoni</h4>
+                        <p>Tomato, Fior di Latte Mozzarella, Loaded Spicy pepperoni €16</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde6" type="text" id="qde6" value="0" size="3" data-price="16.00"
+                            data-type="noVeg" onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>The Pineapple Express (V)</h4>
+                        <p>Tomato, Fior di Latte Mozzarella, Limerick Roasted Ham,
+                            Fresh Pineapple & Sweetcorn €15</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde7" type="text" id="qde7" value="0" size="3" data-price="15.00" data-type="veg"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <h4>Meat Eater</h4>
+                        <p>Tomato, Fior di Latte Mozzarella, Pepperoni, Smoked Pancetta,
+                            Chorizo, Smoked Chicken, Basil €18</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde8" type="text" id="qde8" value="0" size="3" data-price="18.00" data-type="noVeg"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+            </div>
+
+            <div id="desserts">
+                <h2 class="title">Desserts</h2>
+
+                <article>
+                    <div class="item">
+                        <h4>Salted Caramel Chocolate Brownie</h4>
+                        <p>Salted Caramel Chocolate Brownie €4</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde9" type="text" id="qde9" value="0" size="3" data-price="4.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>Crushed Oreo</h4>
+                        <p>Oreo loaded Sundae with chocolate sauce  €5</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde10" type="text" id="qde10" value="0" size="3" data-price="5.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>Box of Milk Chocolate /White Chocolate or Mixed Cookies</h4>
+                        <p>Box of Milk Chocolate /White Chocolate or Mixed Cookies €5</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde11" type="text" id="qde11" value="0" size="3" data-price="5.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+            </div>
+
+            <div id="drinks">
+                <h2 class="title">Drinks</h2>
+
+                <article>
+                    <div class="item">
+                        <h4>Coke</h4>
+                        <p>300ml can €2</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde12" type="text" id="qde12" value="0" size="3" data-price="2.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>Diet Coke</h4>
+                        <p>300ml can €2</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde13" type="text" id="qde13" value="0" size="3" data-price="2.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+
+                <article>
+                    <div class="item">
+                        <h4>7up</h4>
+                        <p>300ml can €2</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde14" type="text" id="qde14" value="0" size="3" data-price="2.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <h4>7up Diet</h4>
+                        <p>300ml can €2</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde15" type="text" id="qde15" value="0" size="3" data-price="2.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <h4>Sparkling Water</h4>
+                        <p>300ml can €2</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde16" type="text" id="qde16" value="0" size="3" data-price="2.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+                <article>
+                    <div class="item">
+                        <h4>Still Water</h4>
+                        <p>300ml can €2</p>
+                    </div>
+                    <div class="qde">
+                        <input name="qde17" type="text" id="qde17" value="0" size="3" data-price="2.00"
+                            onkeyup="menuSum()">
+                    </div>
+                </article>
+            </div>
+        </section>
+        </div>
+
+
+        <!--BILL-->
+        <section class="bill">
+            <table>
+                <tr>
+                    <td>
+                        <p class="total"><strong>Starters</strong></p>
+                        <p class="total">
+                        <div id="starterTotal">€0.0</div>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="total"><strong>Mains</strong></p>
+                        <p class="total">
+                        <div id="pizzaTotal">€0.0</div>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="total"><strong>Desserts</strong></p>
+                        <p class="total">
+                        <div id="dessertTotal">€0.0</div>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="total"><strong>Drinks</strong></p>
+                        <p class="total">
+                        <div id="drinksTotal">€0.0</div>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="total"><strong>Vegetarian</strong></p>
+                        <p class="total">
+                        <div id="vegTotal">€0.0</div>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="total"><strong>Non-vegetarian</strong></p>
+                        <p class="total">
+                        <div id="noVegTotal">€0.0</div>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="total"><strong>Overall Bill</strong></p>
+                        <p class="total">
+                        <div id="itemsTotal">€0.0</div>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer></footer>
 <script src="./src/script.js"></script>
 
 </body>
