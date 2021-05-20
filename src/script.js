@@ -92,7 +92,7 @@ function getRandom() { // getRandom function
   MENU
 */
 
-//stores the id="qntx" from the input tag inside a suitable variable
+//stores the id="qdex" from the input tag inside a suitable variable
 //starters
 var garlicBread = document.getElementById("qde1")
 var chips = document.getElementById("qde2")
